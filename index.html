@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр Изображений Из Папки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+      <a href="donate.html" target="_blank">Поддержать Автора</a><a href="codes.html" target="_blank">Скачать Образные Коды, Книги</a><br>        
+        <!-- Поле для выбора папки -->
+        <div class="file-input-container">
+            <label for="folderPicker" class="custom-file-input">
+                Выберите папку с изображениями
+            </label>
+            <input type="file" id="folderPicker" webkitdirectory directory multiple>
+             <span id="folderNameDisplay">Папка не выбрана</span>
+        </div>
+
+        <!-- Контейнер для отображения изображения -->
+        <div class="image-display">
+            <img id="currentImage" src="" alt="Изображение для просмотра">
+            <p id="fileNameDisplay" hidden></p>
+        </div>
+
+        <!-- Кнопки навигации -->
+        <div class="navigation-buttons">
+            <button id="prevBtn" disabled>< Назад</button>
+            <button id="nextBtn" disabled>Вперед ></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
