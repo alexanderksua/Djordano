@@ -112,6 +112,10 @@ input[type="file"] {
    cursor: not-allowed; /* Курсор "запрещено" */
 }
 
+ul, ol {
+   text-align: left;
+}
+
 .bank, .youtube, .btc {
    border: 1px solid gray;
    border-radius: 16px;
